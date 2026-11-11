@@ -1,0 +1,224 @@
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border-color: #07566b;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e9eef1;
+            color: #263746;
+        }
+
+        .resume {
+            width: 850px;
+            min-height: 1100px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            background: #f7fafc;
+        }
+
+        /* LEFT SIDEBAR */
+
+        .sidebar {
+            background: #07566b;
+            color: white;
+            padding: 30px;
+        }
+
+        .profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 7px solid white;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 40px;
+        }
+
+        .side-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ffffff70;
+        }
+
+        .side-section h2 {
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        .side-section p,
+        .side-section li {
+            font-size: 13px;
+            margin-bottom: 7px;
+            line-height: 1.5;
+        }
+
+        ul {
+            padding-left: 17px;
+        }
+
+        /* RIGHT CONTENT */
+
+        .main {
+            padding: 35px 40px;
+        }
+
+        .name {
+            font-size: 29px;
+            color: #203e53;
+        }
+
+        .surname {
+            font-size: 22px;
+            color: #203e53;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 12px;
+            color: #39717b;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            border-top: 2px solid #176477;
+            padding-top: 10px;
+            font-size: 12px;
+            color: #65737d;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-top: 12px;
+            border:solid 2px;
+        }
+
+        .section h2 {
+            font-size: 17px;
+            color: #203e53;
+            border-bottom: 1px solid #d6dfe3;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 7px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .footer {
+            margin-top: 300px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 10px;
+            color: #777;
+        }
+
+        @media(max-width: 768px) {
+            .resume {
+                width: 100%;
+                display: block;
+                margin: 0;
+            }
+
+            .profile {
+                width: 170px;
+                height: 170px;
+            }
+
+            .main {
+                padding: 25px;
+            }
+
+            .sidebar {
+                padding: 25px;
+            }
+
+            .name {
+                font-size: 25px;
+            }
+
+            .surname {
+                font-size: 19px;
+            }
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+            }
+        }
+        .navbar {
+    background: #07566b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav-logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b8dce2;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SKILLS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border-color: #07566b;
+        }
+.main-content {
+    margin: 5px;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: left ;
+    border: solid 2px  #07566b ;
+    width: 70%;
+}
+        .navbar {
+    background: #07566b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav-logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b8dce2;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-logo">IRFAN</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <h1>Technical skills</h1>
+    <div class="main-content">
+    <ol>
+    <li><b>programming languages</b></li>
+        <ul>
+        <li>c</li>
+        <li>Python</li>
+        <li>Java</li>
+        </ul>
+    <li><b> Web technology</b></li>
+        <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        </ul>
+    </div>
+
+    
+    </ol>
+
+</body>
+</html>
